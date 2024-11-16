@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сайт о котиках</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Добро пожаловать на сайт о котиках!</h1>
+    </header>
+    <main>
+        <section class="about">
+            <h2>Почему котики такие замечательные?</h2>
+            <p>Котики — это милые и игривые существа, которые могут стать отличными компаньонами. Их уютное мурлыканье и забавное поведение всегда поднимают настроение!</p>
+        </section>
+        <section class="gallery">
+            <h2>Галерея котиков</h2>
+            <div class="images">
+                <img src="https://placekitten.com/200/300" alt="Котик 1">
+                <img src="https://placekitten.com/201/300" alt="Котик 2">
+                <img src="https://placekitten.com/202/300" alt="Котик 3">
+                <img src="https://placekitten.com/203/300" alt="Котик 4">
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Сайт о котиках</p>
+    </footer>
+</body>
+</html>
+
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f8ff;
+    color: #333;
+}
+
+header {
+    background-color: #ffcccb;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    margin: 0;
+}
+
+main {
+    padding: 20px;
+}
+
+.about, .gallery {
+    margin-bottom: 40px;
+}
+
+h2 {
+    color: #ff6699;
+}
+
+.images {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.images img {
+    border-radius: 10px;
+    margin: 10px;
+    max-width: 200px;
+    transition: transform 0.3s;
+}
+
+.images img:hover {
+    transform: scale(1.1);
+}
+
+footer {
+    background-color: #ffcccb;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
